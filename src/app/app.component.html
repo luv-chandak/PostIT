@@ -1,0 +1,22 @@
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+ 
+  <span>Welcome Demo</span>
+</div>
+
+<div class="content" role="main">
+
+    <div class="card-container" tabindex="0"  >
+      <input #todo (keydown.enter)="addTodo(todo)">
+      <button (click)="addTodo(todo)">Add todo</button>
+    </div>
+  
+
+  <div class="card-container">
+    <app-list-task> </app-list-task>  
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>
